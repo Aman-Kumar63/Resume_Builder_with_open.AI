@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <h2 class="head">Resume Builder open.AI</h2>
+        <h2 class="head1">Version 2.0</h2>
+    </center>
+    <br>
+    <div class="box">
+        <!-- js code -->
+        <script>
+            let a = prompt("Enter your name:");
+            let b = prompt("Enter your address:");
+            let c = prompt("Enter your phone number:");
+            let pt = parseInt(c);
+            let d = prompt("Enter your Email Id:");
+            let uni = prompt("Enter your college/university name:");
+
+            document.write("<h1> Name: </h1>" +a);
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Address: </h1>" +b);
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Phone Number: </h1>" +pt);
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Email Id: </h1>" +d);
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Summary: </h1>");
+            document.write("<h1> I am a Fourth-Year Information Technology student, with a strong foundation in DSA andproblem-solving. Experienced in building real-world applications, collaborating on team projects. Interested in Software Engineering and Front End Development, with the focus on applying technical skills to practical challenges.  </h1>" ); 
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Education: </h1>" +d);
+            
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1>Skills:</h1>");
+            let choice = prompt("1) Python. 2) Java. 3) C/C++. 4)None \n Enter choice to select your skills: ");
+
+            if(choice == 1){
+                 document.write("<h1>I am Proficient in Python programming with hands-on experience in developing efficient, scalable, and well-structured code for data analysis, automation, and application development. </h1>");
+            }
+
+            else if(choice == 2){
+                 document.write("<h1>I am Proficient in Java programming with strong expertise in designing and developing object-oriented solutions using core OOP principles such as Encapsulation, Inheritance, Polymorphism, and Abstraction. Experienced in building robust, scalable, and maintainable applications with clean and modular code. Skilled in implementing multi-threading, exception handling, and collections framework to optimize performance.</h1>");
+            }
+
+            else if(choice == 3){
+                 document.write("<h1>Proficient in C++ programming with strong expertise in applying object-oriented principles such as Encapsulation, Inheritance, Polymorphism, and Abstraction to design and implement efficient, reusable, and maintainable code. Experienced in developing high-performance applications, working with STL (Standard Template Library), and managing memory effectively using pointers and dynamic allocation.</h1>");
+            }
+
+            else if(choice == 4){
+                document.write("<br>");
+            }
+
+            else{
+                alert("choice invalid!");
+            }
+
+            document.write("<br>");
+            document.write("<br>");
+            
+            let l = prompt("Enter other known languages ");
+            document.write("<h1> Languages: </h1>" +l);
+            document.write("<br>");
+            document.write("<br>");
+
+            let p = prompt("Enter your Projects details. ");
+            document.write("<h1> Projects: </h1>" +p);
+            document.write("<br>");
+            document.write("<br>");
+
+            let w = prompt("Enter your work experience");
+            document.write("<h1> Work Experience: </h1>" +l);
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<h1> Thank You for reviewing my resume, I am available upon request.</h1>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+           
+
+          
+
+        </script>
+    </div>
+
+    <!-- style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(242, 240, 228);
+            margin-left: 15px;
+            margin-right: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+
+        }
+
+        .head {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+            font-size: 25px;
+
+        }
+
+        .head1{
+            color: black;
+            font-size: 19px;
+
+        }
+
+        h1{
+            font-size: 20px;
+            color: rgb(80, 75, 75);
+        }
+
+        /* text moving */
+        h1{
+            position: relative;
+        }
+        h1::after{
+            content: '|';
+            position: absolute;
+            right: 0;
+            color: black;
+            background-color: #e9f1ef;
+            width: 100%;
+            animation: writing 13s ease-in forwards, blink 1s infinite;
+        }
+
+        @keyframes writing {
+            to{
+                width: 0%;
+
+            }            
+        }
+
+        @keyframes blink{
+            40%{
+                color: transparent;
+            }
+        }
+
+        .box{
+            margin:auto;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-left: 30px;
+            padding-top: 50px;
+            color: rgb(8, 8, 8);
+
+        }
+    </style>
+
+</body>
+
+</html>
